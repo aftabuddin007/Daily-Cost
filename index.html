@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>flow – daily expense</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Header Card -->
+    <div class="card header-card">
+      <div class="header-content">
+        <div>
+          <h1>flow <span class="accent-text">expense</span></h1>
+          <div class="subtitle">daily tracker • modern fintech</div>
+        </div>
+        <div class="badge">dashboard</div>
+      </div>
+    </div>
+
+    <!-- Add Expense Card -->
+    <div class="card">
+      <div class="card-header">
+        <h2>new transaction</h2>
+      </div>
+      <form id="expenseForm" class="expense-form">
+        <div class="input-group">
+          <label for="titleInput">title</label>
+          <input type="text" id="titleInput" class="input-field" placeholder="Coffee, Uber, ..." autocomplete="off" required>
+        </div>
+        <div class="input-group">
+          <label for="amountInput">amount ($)</label>
+          <input type="number" id="amountInput" class="input-field" placeholder="0.00" step="0.01" min="0.01" required>
+        </div>
+        <div class="input-group">
+          <label for="dateInput">date</label>
+          <input type="date" id="dateInput" class="input-field" required>
+        </div>
+        <button type="submit" class="btn btn-primary">➕ add expense</button>
+      </form>
+    </div>
+
+    <!-- Expense List Card -->
+    <div class="card">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="date-filter">
+          <label for="filterDateInput">filter by date</label>
+          <input type="date" id="filterDateInput" class="input-field filter-input">
+          <button id="clearFilterBtn" class="btn btn-outline">clear</button>
+        </div>
+        <div class="visible-count" id="visibleCount">0 items</div>
+      </div>
+
+      <!-- List Header (Desktop) -->
+      <div class="list-header">
+        <span>description</span>
+        <span>amount</span>
+        <span>date</span>
+        <span></span>
+      </div>
+
+      <!-- Dynamic Expense List Container -->
+      <div id="expenseListContainer" class="expense-list-container">
+        <!-- JavaScript will populate this -->
+      </div>
+
+      <!-- Minimal Chart Visualization -->
+      <div class="chart-container">
+        <div id="chartFill" class="chart-fill"></div>
+      </div>
+      <div class="chart-label">
+        <span>daily spending</span>
+        <span id="chartPercentLabel">0% of typical</span>
+      </div>
+
+      <!-- Total Section -->
+      <div class="total-section">
+        <span class="total-label">today's total</span>
+        <span class="total-amount" id="totalDisplay">$0.00</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
