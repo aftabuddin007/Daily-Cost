@@ -346,6 +346,7 @@ h2 {
 @media (max-width: 600px) {
   body { 
     padding: 8px; 
+    margin: 10px;
   }
   
   .card { 
