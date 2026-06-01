@@ -46,19 +46,6 @@ JavaScript (ES6) – Functionality and dynamic behavior
 
 
 
----
-
-📂 Project Structure
-
-project-folder/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
-
----
 
 💡 Uses of This Website
 
@@ -167,15 +154,6 @@ Export data to PDF or Excel
 Contributions are welcome. Feel free to fork this repository and improve the project.
 
 
----
-
-📜 License
-
-This project is open-source and available for educational purposes.
-
-
----
-
 👨‍💻 Author
 
-Created with ❤️ using HTML, CSS, and JavaScript.
+Created with ❤️ Aftab using HTML, CSS, and JavaScript.
