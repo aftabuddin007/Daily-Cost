@@ -353,6 +353,7 @@ h2 {
   .card { 
     padding: 20px 16px; 
     border-radius: 20px; 
+    margin: 20px; 
   }
   
   h1 { 
