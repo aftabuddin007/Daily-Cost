@@ -353,7 +353,7 @@ h2 {
   .card { 
     padding: 20px 16px; 
     border-radius: 20px; 
-    margin: 20px; 
+    
   }
   
   h1 { 
@@ -406,5 +406,6 @@ h2 {
   .delete-btn {
     grid-column: 2 / 3;
     justify-self: end;
+    padding: 4px 6px;
   }
 }
